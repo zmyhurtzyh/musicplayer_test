@@ -9,7 +9,6 @@ import android.database.sqlite.SQLiteDatabase;
  * 用户数据访问层，封装 users 表的增删查操作。
  * <p>
  * 支持多用户注册和登录，用户名唯一约束保证不重复注册。
- * 密码明文存储（本地应用简化处理，生产环境应加密）。
  * </p>
  */
 public class UserDao {

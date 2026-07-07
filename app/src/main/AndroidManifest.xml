@@ -16,7 +16,6 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <!-- 唤醒锁，避免播放时 CPU 休眠 -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <!-- 网络权限（用于将来扩展在线封面占位） -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
