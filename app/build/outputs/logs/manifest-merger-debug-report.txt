@@ -1,0 +1,386 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:2:1-65:12
+MERGED from [androidx.databinding:viewbinding:8.1.4] E:\Android\GradleHome\caches\transforms-3\09b839979fef863cd846371205cacb00\transformed\viewbinding-8.1.4\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.material:material:1.11.0] E:\Android\GradleHome\caches\transforms-3\c6240bf1ed6d5526cf1349b6dab7468e\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] E:\Android\GradleHome\caches\transforms-3\c2cd2a87133d21a30be53f17c1f45f01\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] E:\Android\GradleHome\caches\transforms-3\ab3b53702ea48e73d387bc87db5d7130\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] E:\Android\GradleHome\caches\transforms-3\ba5b5352b8b145ec4650912ae02cb54a\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] E:\Android\GradleHome\caches\transforms-3\406f9016a575744ea8e5d24dee26dfad\transformed\viewpager2-1.1.0-beta02\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] E:\Android\GradleHome\caches\transforms-3\d21e47d8f08165aac8fb04f25aa9fbb6\transformed\recyclerview-1.3.2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.16.0] E:\Android\GradleHome\caches\transforms-3\9316baca308ef67d2620fc1ba2281bdc\transformed\glide-4.16.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.fragment:fragment:1.6.2] E:\Android\GradleHome\caches\transforms-3\c19ce01df1f5544c9d129988855ce9cb\transformed\fragment-1.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.8.0] E:\Android\GradleHome\caches\transforms-3\b5921d2a9913ef6865299dc303ff73a5\transformed\activity-1.8.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.palette:palette:1.0.0] E:\Android\GradleHome\caches\transforms-3\418a51ff5d8fe80c67d5be429513435b\transformed\palette-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] E:\Android\GradleHome\caches\transforms-3\d84e43cf0bf3bf25ae2700c16545be68\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] E:\Android\GradleHome\caches\transforms-3\5729ae2d2ec809ea642d5e7a14922c5c\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] E:\Android\GradleHome\caches\transforms-3\2287692be467da821cc3893ab5037066\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.7.0] E:\Android\GradleHome\caches\transforms-3\27324d7695ef82657cacf519a52a3932\transformed\media-1.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] E:\Android\GradleHome\caches\transforms-3\edf64bed91c021ffcf84563030942e57\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] E:\Android\GradleHome\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] E:\Android\GradleHome\caches\transforms-3\361868cc34335b08c856feca93223d2f\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] E:\Android\GradleHome\caches\transforms-3\6b054d121f8f8384995d41fa28c644b3\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] E:\Android\GradleHome\caches\transforms-3\2e93c70a7c1a45db136bea3ed6c3b057\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] E:\Android\GradleHome\caches\transforms-3\298df99e26c6b4991be293890c25628a\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] E:\Android\GradleHome\caches\transforms-3\efdf1fdb3cf78691ea6fa4a08dd255a6\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] E:\Android\GradleHome\caches\transforms-3\54c641a0bbbc877e43f87e283c622ff1\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] E:\Android\GradleHome\caches\transforms-3\da7fdb75b1fa21add15096270b874d12\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] E:\Android\GradleHome\caches\transforms-3\d9cee3da26ace76937c46ea57ddbde41\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] E:\Android\GradleHome\caches\transforms-3\a1f5c998ac8436fa3e33e8078d5ddb2e\transformed\lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] E:\Android\GradleHome\caches\transforms-3\ea521e4de5d0022d23afbf3775444181\transformed\lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.9.0] E:\Android\GradleHome\caches\transforms-3\84c733ff6bb50f2ba10bc0e2534a1a79\transformed\core-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.customview:customview:1.1.0] E:\Android\GradleHome\caches\transforms-3\14fe347c764f29b11516b7862d4878ee\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.9.0] E:\Android\GradleHome\caches\transforms-3\47e328fbb9a6da19e7cdd96cc41cfa33\transformed\core-1.9.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] E:\Android\GradleHome\caches\transforms-3\fba6c4c526978d34d7ccf00c629da084\transformed\lifecycle-runtime-2.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] E:\Android\GradleHome\caches\transforms-3\ce14a89202e9455da5142b9d301522c7\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] E:\Android\GradleHome\caches\transforms-3\78627c0d0248117e1992399dec2cc4f0\transformed\lifecycle-viewmodel-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] E:\Android\GradleHome\caches\transforms-3\f174872f14e7f9114042421c74e8cd8c\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] E:\Android\GradleHome\caches\transforms-3\4bc3c31be58c84c7eef64a21efe641d9\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] E:\Android\GradleHome\caches\transforms-3\a8ae2bcdeef8c06768fd1d1664187624\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] E:\Android\GradleHome\caches\transforms-3\5d1f79f67d8465e810f4958c68e830ca\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] E:\Android\GradleHome\caches\transforms-3\289ccaf7b0a0a390d2544ba34770067a\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] E:\Android\GradleHome\caches\transforms-3\ff3b40dcec0589f7e0e9c90e81e7c1c1\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] E:\Android\GradleHome\caches\transforms-3\13cc12e57e0b9278f1a83c875349ab90\transformed\gifdecoder-4.16.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] E:\Android\GradleHome\caches\transforms-3\bbf18c54af7bbcebcbbc979a012956e2\transformed\exifinterface-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] E:\Android\GradleHome\caches\transforms-3\17cd7e5af6f7d66d17b951b3f7baff52\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] E:\Android\GradleHome\caches\transforms-3\db33129faae7d47b11379552c3bd0280\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] E:\Android\GradleHome\caches\transforms-3\430c78baebccf8ccc98b176ff9bc466b\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] E:\Android\GradleHome\caches\transforms-3\8db0ac0199798375ba99bc26c8706f30\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] E:\Android\GradleHome\caches\transforms-3\a9631b579a3149f5fd8c8354f206e29f\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] E:\Android\GradleHome\caches\transforms-3\b58778ca2f2b01cf320d34de726e4d68\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] E:\Android\GradleHome\caches\transforms-3\b9d501853a9ed8f3b639ab2f7be4741c\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_MEDIA_AUDIO
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:5:5-75
+	android:name
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:5:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:7:5-8:38
+	android:maxSdkVersion
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:8:9-35
+	android:name
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:7:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:10:5-11:38
+	android:maxSdkVersion
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:11:9-35
+	android:name
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:10:22-78
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:13:5-77
+	android:name
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:13:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:14:5-92
+	android:name
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:14:22-89
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:16:5-77
+	android:name
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:16:22-74
+uses-permission#android.permission.WAKE_LOCK
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:18:5-68
+	android:name
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:18:22-65
+uses-permission#android.permission.INTERNET
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:20:5-67
+	android:name
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:20:22-64
+application
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:22:5-64:19
+INJECTED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:22:5-64:19
+MERGED from [com.google.android.material:material:1.11.0] E:\Android\GradleHome\caches\transforms-3\c6240bf1ed6d5526cf1349b6dab7468e\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.11.0] E:\Android\GradleHome\caches\transforms-3\c6240bf1ed6d5526cf1349b6dab7468e\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] E:\Android\GradleHome\caches\transforms-3\c2cd2a87133d21a30be53f17c1f45f01\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] E:\Android\GradleHome\caches\transforms-3\c2cd2a87133d21a30be53f17c1f45f01\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.2.0] E:\Android\GradleHome\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] E:\Android\GradleHome\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] E:\Android\GradleHome\caches\transforms-3\d9cee3da26ace76937c46ea57ddbde41\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] E:\Android\GradleHome\caches\transforms-3\d9cee3da26ace76937c46ea57ddbde41\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.9.0] E:\Android\GradleHome\caches\transforms-3\47e328fbb9a6da19e7cdd96cc41cfa33\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.9.0] E:\Android\GradleHome\caches\transforms-3\47e328fbb9a6da19e7cdd96cc41cfa33\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] E:\Android\GradleHome\caches\transforms-3\5d1f79f67d8465e810f4958c68e830ca\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] E:\Android\GradleHome\caches\transforms-3\5d1f79f67d8465e810f4958c68e830ca\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] E:\Android\GradleHome\caches\transforms-3\17cd7e5af6f7d66d17b951b3f7baff52\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] E:\Android\GradleHome\caches\transforms-3\17cd7e5af6f7d66d17b951b3f7baff52\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml
+	android:requestLegacyExternalStorage
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:30:9-52
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.9.0] E:\Android\GradleHome\caches\transforms-3\47e328fbb9a6da19e7cdd96cc41cfa33\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:28:9-35
+	android:label
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:26:9-41
+	android:roundIcon
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:27:9-54
+	android:icon
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:25:9-43
+	android:allowBackup
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:24:9-35
+	android:theme
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:29:9-49
+	android:name
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:23:9-33
+activity#com.musicplayer.app.ui.login.LoginActivity
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:32:9-40:20
+	android:exported
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:34:13-36
+	android:theme
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:35:13-53
+	android:name
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:33:13-51
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:36:13-39:29
+action#android.intent.action.MAIN
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:37:17-69
+	android:name
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:37:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:38:17-77
+	android:name
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:38:27-74
+activity#com.musicplayer.app.ui.MainActivity
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:42:9-47:20
+	android:launchMode
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:45:13-44
+	android:exported
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:44:13-37
+	android:theme
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:46:13-53
+	android:name
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:43:13-44
+activity#com.musicplayer.app.ui.playing.PlayingActivity
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:49:9-53:64
+	android:screenOrientation
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:52:13-49
+	android:exported
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:51:13-37
+	android:theme
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:53:13-61
+	android:name
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:50:13-55
+service#com.musicplayer.app.player.MusicService
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:56:9-63:19
+	android:exported
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:58:13-36
+	android:foregroundServiceType
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:59:13-58
+	android:name
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:57:13-48
+intent-filter#action:name:android.media.browse.MediaBrowserService
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:60:13-62:29
+action#android.media.browse.MediaBrowserService
+ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:61:17-83
+	android:name
+		ADDED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml:61:25-80
+uses-sdk
+INJECTED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml
+INJECTED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:8.1.4] E:\Android\GradleHome\caches\transforms-3\09b839979fef863cd846371205cacb00\transformed\viewbinding-8.1.4\AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:8.1.4] E:\Android\GradleHome\caches\transforms-3\09b839979fef863cd846371205cacb00\transformed\viewbinding-8.1.4\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.material:material:1.11.0] E:\Android\GradleHome\caches\transforms-3\c6240bf1ed6d5526cf1349b6dab7468e\transformed\material-1.11.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.11.0] E:\Android\GradleHome\caches\transforms-3\c6240bf1ed6d5526cf1349b6dab7468e\transformed\material-1.11.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] E:\Android\GradleHome\caches\transforms-3\c2cd2a87133d21a30be53f17c1f45f01\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] E:\Android\GradleHome\caches\transforms-3\c2cd2a87133d21a30be53f17c1f45f01\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] E:\Android\GradleHome\caches\transforms-3\ab3b53702ea48e73d387bc87db5d7130\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] E:\Android\GradleHome\caches\transforms-3\ab3b53702ea48e73d387bc87db5d7130\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] E:\Android\GradleHome\caches\transforms-3\ba5b5352b8b145ec4650912ae02cb54a\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] E:\Android\GradleHome\caches\transforms-3\ba5b5352b8b145ec4650912ae02cb54a\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] E:\Android\GradleHome\caches\transforms-3\406f9016a575744ea8e5d24dee26dfad\transformed\viewpager2-1.1.0-beta02\AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] E:\Android\GradleHome\caches\transforms-3\406f9016a575744ea8e5d24dee26dfad\transformed\viewpager2-1.1.0-beta02\AndroidManifest.xml:5:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] E:\Android\GradleHome\caches\transforms-3\d21e47d8f08165aac8fb04f25aa9fbb6\transformed\recyclerview-1.3.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] E:\Android\GradleHome\caches\transforms-3\d21e47d8f08165aac8fb04f25aa9fbb6\transformed\recyclerview-1.3.2\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.16.0] E:\Android\GradleHome\caches\transforms-3\9316baca308ef67d2620fc1ba2281bdc\transformed\glide-4.16.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.16.0] E:\Android\GradleHome\caches\transforms-3\9316baca308ef67d2620fc1ba2281bdc\transformed\glide-4.16.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.6.2] E:\Android\GradleHome\caches\transforms-3\c19ce01df1f5544c9d129988855ce9cb\transformed\fragment-1.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.6.2] E:\Android\GradleHome\caches\transforms-3\c19ce01df1f5544c9d129988855ce9cb\transformed\fragment-1.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] E:\Android\GradleHome\caches\transforms-3\b5921d2a9913ef6865299dc303ff73a5\transformed\activity-1.8.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] E:\Android\GradleHome\caches\transforms-3\b5921d2a9913ef6865299dc303ff73a5\transformed\activity-1.8.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.palette:palette:1.0.0] E:\Android\GradleHome\caches\transforms-3\418a51ff5d8fe80c67d5be429513435b\transformed\palette-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.palette:palette:1.0.0] E:\Android\GradleHome\caches\transforms-3\418a51ff5d8fe80c67d5be429513435b\transformed\palette-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] E:\Android\GradleHome\caches\transforms-3\d84e43cf0bf3bf25ae2700c16545be68\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] E:\Android\GradleHome\caches\transforms-3\d84e43cf0bf3bf25ae2700c16545be68\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] E:\Android\GradleHome\caches\transforms-3\5729ae2d2ec809ea642d5e7a14922c5c\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] E:\Android\GradleHome\caches\transforms-3\5729ae2d2ec809ea642d5e7a14922c5c\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] E:\Android\GradleHome\caches\transforms-3\2287692be467da821cc3893ab5037066\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] E:\Android\GradleHome\caches\transforms-3\2287692be467da821cc3893ab5037066\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.7.0] E:\Android\GradleHome\caches\transforms-3\27324d7695ef82657cacf519a52a3932\transformed\media-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.media:media:1.7.0] E:\Android\GradleHome\caches\transforms-3\27324d7695ef82657cacf519a52a3932\transformed\media-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] E:\Android\GradleHome\caches\transforms-3\edf64bed91c021ffcf84563030942e57\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] E:\Android\GradleHome\caches\transforms-3\edf64bed91c021ffcf84563030942e57\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] E:\Android\GradleHome\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] E:\Android\GradleHome\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] E:\Android\GradleHome\caches\transforms-3\361868cc34335b08c856feca93223d2f\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] E:\Android\GradleHome\caches\transforms-3\361868cc34335b08c856feca93223d2f\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] E:\Android\GradleHome\caches\transforms-3\6b054d121f8f8384995d41fa28c644b3\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] E:\Android\GradleHome\caches\transforms-3\6b054d121f8f8384995d41fa28c644b3\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] E:\Android\GradleHome\caches\transforms-3\2e93c70a7c1a45db136bea3ed6c3b057\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] E:\Android\GradleHome\caches\transforms-3\2e93c70a7c1a45db136bea3ed6c3b057\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] E:\Android\GradleHome\caches\transforms-3\298df99e26c6b4991be293890c25628a\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] E:\Android\GradleHome\caches\transforms-3\298df99e26c6b4991be293890c25628a\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] E:\Android\GradleHome\caches\transforms-3\efdf1fdb3cf78691ea6fa4a08dd255a6\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] E:\Android\GradleHome\caches\transforms-3\efdf1fdb3cf78691ea6fa4a08dd255a6\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] E:\Android\GradleHome\caches\transforms-3\54c641a0bbbc877e43f87e283c622ff1\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] E:\Android\GradleHome\caches\transforms-3\54c641a0bbbc877e43f87e283c622ff1\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] E:\Android\GradleHome\caches\transforms-3\da7fdb75b1fa21add15096270b874d12\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] E:\Android\GradleHome\caches\transforms-3\da7fdb75b1fa21add15096270b874d12\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] E:\Android\GradleHome\caches\transforms-3\d9cee3da26ace76937c46ea57ddbde41\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] E:\Android\GradleHome\caches\transforms-3\d9cee3da26ace76937c46ea57ddbde41\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] E:\Android\GradleHome\caches\transforms-3\a1f5c998ac8436fa3e33e8078d5ddb2e\transformed\lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] E:\Android\GradleHome\caches\transforms-3\a1f5c998ac8436fa3e33e8078d5ddb2e\transformed\lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] E:\Android\GradleHome\caches\transforms-3\ea521e4de5d0022d23afbf3775444181\transformed\lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] E:\Android\GradleHome\caches\transforms-3\ea521e4de5d0022d23afbf3775444181\transformed\lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] E:\Android\GradleHome\caches\transforms-3\84c733ff6bb50f2ba10bc0e2534a1a79\transformed\core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] E:\Android\GradleHome\caches\transforms-3\84c733ff6bb50f2ba10bc0e2534a1a79\transformed\core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.customview:customview:1.1.0] E:\Android\GradleHome\caches\transforms-3\14fe347c764f29b11516b7862d4878ee\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] E:\Android\GradleHome\caches\transforms-3\14fe347c764f29b11516b7862d4878ee\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.9.0] E:\Android\GradleHome\caches\transforms-3\47e328fbb9a6da19e7cdd96cc41cfa33\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] E:\Android\GradleHome\caches\transforms-3\47e328fbb9a6da19e7cdd96cc41cfa33\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] E:\Android\GradleHome\caches\transforms-3\fba6c4c526978d34d7ccf00c629da084\transformed\lifecycle-runtime-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] E:\Android\GradleHome\caches\transforms-3\fba6c4c526978d34d7ccf00c629da084\transformed\lifecycle-runtime-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] E:\Android\GradleHome\caches\transforms-3\ce14a89202e9455da5142b9d301522c7\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] E:\Android\GradleHome\caches\transforms-3\ce14a89202e9455da5142b9d301522c7\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] E:\Android\GradleHome\caches\transforms-3\78627c0d0248117e1992399dec2cc4f0\transformed\lifecycle-viewmodel-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] E:\Android\GradleHome\caches\transforms-3\78627c0d0248117e1992399dec2cc4f0\transformed\lifecycle-viewmodel-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] E:\Android\GradleHome\caches\transforms-3\f174872f14e7f9114042421c74e8cd8c\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] E:\Android\GradleHome\caches\transforms-3\f174872f14e7f9114042421c74e8cd8c\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] E:\Android\GradleHome\caches\transforms-3\4bc3c31be58c84c7eef64a21efe641d9\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] E:\Android\GradleHome\caches\transforms-3\4bc3c31be58c84c7eef64a21efe641d9\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] E:\Android\GradleHome\caches\transforms-3\a8ae2bcdeef8c06768fd1d1664187624\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] E:\Android\GradleHome\caches\transforms-3\a8ae2bcdeef8c06768fd1d1664187624\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] E:\Android\GradleHome\caches\transforms-3\5d1f79f67d8465e810f4958c68e830ca\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] E:\Android\GradleHome\caches\transforms-3\5d1f79f67d8465e810f4958c68e830ca\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.1] E:\Android\GradleHome\caches\transforms-3\289ccaf7b0a0a390d2544ba34770067a\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] E:\Android\GradleHome\caches\transforms-3\289ccaf7b0a0a390d2544ba34770067a\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] E:\Android\GradleHome\caches\transforms-3\ff3b40dcec0589f7e0e9c90e81e7c1c1\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] E:\Android\GradleHome\caches\transforms-3\ff3b40dcec0589f7e0e9c90e81e7c1c1\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] E:\Android\GradleHome\caches\transforms-3\13cc12e57e0b9278f1a83c875349ab90\transformed\gifdecoder-4.16.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] E:\Android\GradleHome\caches\transforms-3\13cc12e57e0b9278f1a83c875349ab90\transformed\gifdecoder-4.16.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] E:\Android\GradleHome\caches\transforms-3\bbf18c54af7bbcebcbbc979a012956e2\transformed\exifinterface-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] E:\Android\GradleHome\caches\transforms-3\bbf18c54af7bbcebcbbc979a012956e2\transformed\exifinterface-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] E:\Android\GradleHome\caches\transforms-3\17cd7e5af6f7d66d17b951b3f7baff52\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] E:\Android\GradleHome\caches\transforms-3\17cd7e5af6f7d66d17b951b3f7baff52\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] E:\Android\GradleHome\caches\transforms-3\db33129faae7d47b11379552c3bd0280\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] E:\Android\GradleHome\caches\transforms-3\db33129faae7d47b11379552c3bd0280\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] E:\Android\GradleHome\caches\transforms-3\430c78baebccf8ccc98b176ff9bc466b\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] E:\Android\GradleHome\caches\transforms-3\430c78baebccf8ccc98b176ff9bc466b\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] E:\Android\GradleHome\caches\transforms-3\8db0ac0199798375ba99bc26c8706f30\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] E:\Android\GradleHome\caches\transforms-3\8db0ac0199798375ba99bc26c8706f30\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] E:\Android\GradleHome\caches\transforms-3\a9631b579a3149f5fd8c8354f206e29f\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] E:\Android\GradleHome\caches\transforms-3\a9631b579a3149f5fd8c8354f206e29f\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] E:\Android\GradleHome\caches\transforms-3\b58778ca2f2b01cf320d34de726e4d68\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] E:\Android\GradleHome\caches\transforms-3\b58778ca2f2b01cf320d34de726e4d68\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] E:\Android\GradleHome\caches\transforms-3\b9d501853a9ed8f3b639ab2f7be4741c\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] E:\Android\GradleHome\caches\transforms-3\b9d501853a9ed8f3b639ab2f7be4741c\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\AndroidStudioProjects\music_test\app\src\main\AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] E:\Android\GradleHome\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] E:\Android\GradleHome\caches\transforms-3\d9cee3da26ace76937c46ea57ddbde41\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] E:\Android\GradleHome\caches\transforms-3\d9cee3da26ace76937c46ea57ddbde41\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] E:\Android\GradleHome\caches\transforms-3\17cd7e5af6f7d66d17b951b3f7baff52\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] E:\Android\GradleHome\caches\transforms-3\17cd7e5af6f7d66d17b951b3f7baff52\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] E:\Android\GradleHome\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] E:\Android\GradleHome\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] E:\Android\GradleHome\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] E:\Android\GradleHome\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] E:\Android\GradleHome\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] E:\Android\GradleHome\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] E:\Android\GradleHome\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] E:\Android\GradleHome\caches\transforms-3\d9cee3da26ace76937c46ea57ddbde41\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] E:\Android\GradleHome\caches\transforms-3\d9cee3da26ace76937c46ea57ddbde41\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] E:\Android\GradleHome\caches\transforms-3\d9cee3da26ace76937c46ea57ddbde41\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] E:\Android\GradleHome\caches\transforms-3\47e328fbb9a6da19e7cdd96cc41cfa33\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] E:\Android\GradleHome\caches\transforms-3\47e328fbb9a6da19e7cdd96cc41cfa33\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] E:\Android\GradleHome\caches\transforms-3\47e328fbb9a6da19e7cdd96cc41cfa33\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+permission#com.musicplayer.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] E:\Android\GradleHome\caches\transforms-3\47e328fbb9a6da19e7cdd96cc41cfa33\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] E:\Android\GradleHome\caches\transforms-3\47e328fbb9a6da19e7cdd96cc41cfa33\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] E:\Android\GradleHome\caches\transforms-3\47e328fbb9a6da19e7cdd96cc41cfa33\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] E:\Android\GradleHome\caches\transforms-3\47e328fbb9a6da19e7cdd96cc41cfa33\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] E:\Android\GradleHome\caches\transforms-3\47e328fbb9a6da19e7cdd96cc41cfa33\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+uses-permission#com.musicplayer.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] E:\Android\GradleHome\caches\transforms-3\47e328fbb9a6da19e7cdd96cc41cfa33\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] E:\Android\GradleHome\caches\transforms-3\47e328fbb9a6da19e7cdd96cc41cfa33\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Android\GradleHome\caches\transforms-3\560c7a1db1cc62fd968a37cbaa224dd6\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92

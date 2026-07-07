@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 底部迷你播放栏：在主界面底部常驻显示当前播放歌曲的简要信息和控制入口 -->
+<!-- 核心布局：RelativeLayout，顶部进度条 + 左侧封面 + 中间歌曲信息 + 右侧播放列表/播放暂停按钮 -->
+<!-- 关键交互：点击整个区域进入全屏播放页、播放/暂停按钮控制播放状态、列表按钮弹出播放队列 -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/bg_white">
+
+    <!-- 进度条底色：灰色细线，作为进度条的背景轨道 -->
+    <View
+        android:id="@+id/mini_progress"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/divider" />
+
+    <!-- 进度条已播放部分：红色细线，宽度由代码动态设置，表示当前播放进度 -->
+    <View
+        android:id="@+id/mini_progress_fill"
+        android:layout_width="0dp"
+        android:layout_height="1.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/netease_red" />
+
+    <!-- 封面缩略图：左侧显示当前歌曲的专辑封面 -->
+    <ImageView
+        android:id="@+id/mini_cover"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="12dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null" />
+
+    <!-- 歌曲信息：封面右侧显示歌曲名和歌手名，单行省略 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/mini_cover"
+        android:layout_toStartOf="@id/mini_play_list"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="6dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <!-- 歌曲名称 -->
+        <TextView
+            android:id="@+id/mini_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
+
+        <!-- 歌手名称 -->
+        <TextView
+            android:id="@+id/mini_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <!-- 播放列表按钮：点击弹出播放队列 BottomSheet -->
+    <ImageView
+        android:id="@+id/mini_play_list"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/mini_play"
+        android:scaleType="center"
+        android:src="@drawable/ic_queue"
+        android:contentDescription="@null" />
+
+    <!-- 播放/暂停按钮：点击切换播放和暂停状态 -->
+    <ImageView
+        android:id="@+id/mini_play"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:padding="6dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_mini_play"
+        android:contentDescription="@null" />
+</RelativeLayout>

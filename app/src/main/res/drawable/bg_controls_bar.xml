@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 播放控制栏半透明背景：极低透明度的黑色矩形，为控制按钮提供微弱的视觉分层 -->
+<!-- 视觉效果：近乎透明但可感知的暗色背景，将播放控制栏与上方内容做轻微区分，不破坏整体沉浸感 -->
+<!-- 使用场景：全屏播放页（activity_playing）中播放控制栏（playing_controls）的背景 -->
+<!-- 颜色含义：#0D000000 = 黑色 5% 透明度，几乎不可见但能在深色背景上提供微弱的层次感 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#0D000000" />
+</shape>

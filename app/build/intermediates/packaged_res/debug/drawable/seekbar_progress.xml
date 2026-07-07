@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 播放进度条样式：三层 layer-list 叠放，分别渲染未播放背景、缓冲进度和已播放进度 -->
+<!-- 视觉效果：4dp 圆角细进度条，白色半透明背景 + 淡红缓冲 + 红色渐变已播放，层次分明 -->
+<!-- 使用场景：全屏播放页（activity_playing）中 SeekBar 的 progressDrawable -->
+<!-- 颜色含义：背景 #33FFFFFF（20%白色）、缓冲 #55C20C0C（33%网易红）、已播放 #E84040→#C20C0C（亮红→网易红渐变） -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 未播放背景：白色半透明细线，4dp 高度，2dp 圆角 -->
+    <item android:id="@android:id/background"
+        android:height="4dp"
+        android:gravity="center_vertical">
+        <shape android:shape="rectangle">
+            <solid android:color="#33FFFFFF" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+    <!-- 缓冲进度：淡红色细线，表示已缓冲但未播放的部分 -->
+    <item android:id="@android:id/secondaryProgress"
+        android:height="4dp"
+        android:gravity="center_vertical">
+        <clip>
+            <shape android:shape="rectangle">
+                <solid android:color="#55C20C0C" />
+                <corners android:radius="2dp" />
+            </shape>
+        </clip>
+    </item>
+    <!-- 已播放进度：红色渐变细线（亮红→网易红），从左到右填充 -->
+    <item android:id="@android:id/progress"
+        android:height="4dp"
+        android:gravity="center_vertical">
+        <clip>
+            <shape android:shape="rectangle">
+                <gradient
+                    android:startColor="#E84040"
+                    android:endColor="#C20C0C"
+                    android:angle="0" />
+                <corners android:radius="2dp" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

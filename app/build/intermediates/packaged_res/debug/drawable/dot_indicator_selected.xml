@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 页面指示器选中态：6dp 纯白色实心圆点 -->
+<!-- 视觉效果：小尺寸白色圆点，在深色背景上醒目突出，表示当前活跃页面 -->
+<!-- 使用场景：全屏播放页（activity_playing）中页面指示器的选中项，对应当前显示的封面/歌词页 -->
+<!-- 颜色含义：#FFFFFF（纯白），与深蓝紫背景形成高对比度 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#FFFFFF" />
+    <size android:width="6dp" android:height="6dp" />
+</shape>

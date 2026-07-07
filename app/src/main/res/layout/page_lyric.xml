@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 歌词子页（ViewPager2 第二页）：逐行歌词同步滚动显示 -->
+<!-- 核心布局：FrameLayout 叠放顶部/底部渐变遮罩 + 歌词 ListView + 无歌词占位提示 -->
+<!-- 关键交互：歌词随播放进度自动滚动高亮当前行，顶部/底部渐变遮罩营造淡入淡出效果 -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <!-- 顶部渐变遮罩：从深色到透明的渐变，让顶部歌词自然淡出，避免突兀截断 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top"
+        android:background="@drawable/bg_lyric_fade_top" />
+
+    <!-- 歌词列表：逐行显示歌词文本，transcriptMode 自动滚动到最新高亮行，上下留白确保首尾行能居中 -->
+    <ListView
+        android:id="@+id/lyric_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadeScrollbars="false"
+        android:listSelector="@android:color/transparent"
+        android:paddingTop="100dp"
+        android:paddingBottom="100dp"
+        android:scrollbars="none"
+        android:transcriptMode="normal" />
+
+    <!-- 无歌词占位提示：当歌曲无歌词数据时显示，默认隐藏 -->
+    <TextView
+        android:id="@+id/lyric_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/playing_no_lyric"
+        android:textColor="@color/text_white_secondary"
+        android:textSize="15sp"
+        android:visibility="gone" />
+</FrameLayout>

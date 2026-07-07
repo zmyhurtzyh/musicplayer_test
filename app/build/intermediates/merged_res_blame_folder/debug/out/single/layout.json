@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\activity_main.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\item_home_card.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\item_home_card.xml"
+    },
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\fragment_library.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\fragment_library.xml"
+    },
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\page_lyric.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\page_lyric.xml"
+    },
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\fragment_search.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\item_menu_action.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\item_menu_action.xml"
+    },
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\item_playlist.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\item_playlist.xml"
+    },
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\item_home_section.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\item_home_section.xml"
+    },
+    {
+        "merged": "com.musicplayer.app-mergeDebugResources-34:/layout/activity_login.xml",
+        "source": "com.musicplayer.app-main-37:/layout/activity_login.xml"
+    },
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\view_mini_player.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\view_mini_player.xml"
+    },
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\dialog_song_more.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\dialog_song_more.xml"
+    },
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\item_song.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\item_song.xml"
+    },
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\dialog_play_queue.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\dialog_play_queue.xml"
+    },
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\page_disc.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\page_disc.xml"
+    },
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\fragment_home.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\activity_playing.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\activity_playing.xml"
+    },
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\item_queue.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\item_queue.xml"
+    },
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\activity_login.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-mergeDebugResources-34:\\layout\\dialog_playlist_detail.xml",
+        "source": "E:\\Android\\GradleHome\\daemon\\8.2\\com.musicplayer.app-main-37:\\layout\\dialog_playlist_detail.xml"
+    }
+]

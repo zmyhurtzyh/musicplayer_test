@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 歌曲列表项：通用歌曲行布局，用于搜索结果、歌单详情、播放队列等多个场景 -->
+<!-- 核心布局：水平 LinearLayout，序号（可选）+ 封面 + 标题/副标题 + 收藏按钮 + 更多按钮 -->
+<!-- 关键交互：点击整行播放歌曲、收藏按钮切换收藏状态、更多按钮弹出操作面板 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:background="?attr/selectableItemBackground">
+
+    <!-- 序号：部分场景显示（如歌单详情中的排名），默认隐藏 -->
+    <TextView
+        android:id="@+id/song_index"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/text_hint"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <!-- 封面缩略图：显示歌曲专辑封面 -->
+    <ImageView
+        android:id="@+id/song_cover"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null" />
+
+    <!-- 标题/副标题区域：歌曲名称（主）+ 歌手-专辑（副），垂直排列 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <!-- 歌曲标题：单行省略 -->
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
+
+        <!-- 歌曲副标题：歌手名 - 专辑名，单行省略 -->
+        <TextView
+            android:id="@+id/song_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <!-- 收藏按钮：点击切换收藏/取消收藏状态，图标随状态变化 -->
+    <ImageView
+        android:id="@+id/song_favorite"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/selector_favorite"
+        android:contentDescription="@null" />
+
+    <!-- 更多按钮：点击弹出歌曲操作面板（收藏、加入歌单、下载、分享等） -->
+    <ImageView
+        android:id="@+id/song_more"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_more"
+        android:contentDescription="@null" />
+</LinearLayout>

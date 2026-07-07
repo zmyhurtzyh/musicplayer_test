@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 播放页深蓝紫渐变背景：从上到下（angle=270）由深蓝紫过渡到极深蓝紫 -->
+<!-- 视觉效果：深色渐变营造沉浸式播放氛围，与白色文字/控件形成高对比度，确保可读性 -->
+<!-- 使用场景：全屏播放页面（activity_playing）的根布局背景 -->
+<!-- 颜色含义：#312E81（深靛蓝）→ #1E1B4B（深紫蓝）→ #0F0A2E（极深蓝紫），由亮到暗的纵向渐变 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="#312E81"
+        android:centerColor="#1E1B4B"
+        android:endColor="#0F0A2E"
+        android:angle="270" />
+</shape>

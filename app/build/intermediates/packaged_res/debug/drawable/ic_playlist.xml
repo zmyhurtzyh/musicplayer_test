@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 歌单默认图标 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="#FFE0E0E0"
+        android:pathData="M0,0h48v48h-48z" />
+    <path
+        android:fillColor="#FFBDBDBD"
+        android:pathData="M12,16h16v2h-16zM12,22h16v2h-16zM12,28h10v2h-10zM30,12v14.55c-0.59,-0.34 -1.27,-0.55 -2,-0.55 -2.21,0 -4,1.79 -4,4s1.79,4 4,4 4,-1.79 4,-4V16h4v-4z" />
+</vector>

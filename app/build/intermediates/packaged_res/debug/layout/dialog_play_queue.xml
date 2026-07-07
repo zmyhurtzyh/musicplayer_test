@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 播放队列面板（BottomSheet）：从底部弹出展示当前播放队列中的歌曲列表 -->
+<!-- 核心布局：垂直 LinearLayout，拖动指示条 + 标题栏（队列标题 + 关闭按钮）+ 分隔线 + 歌曲列表 RecyclerView -->
+<!-- 关键交互：列表项点击切换播放歌曲、右侧删除按钮移除歌曲、关闭按钮收起面板 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:orientation="vertical"
+    android:paddingBottom="12dp">
+
+    <!-- 拖动指示条：视觉提示用户可拖拽调整面板高度 -->
+    <View
+        android:layout_width="36dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:background="#E0E0E0" />
+
+    <!-- 标题栏：显示播放队列歌曲数量，右侧关闭按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp">
+
+        <!-- 队列标题：显示"播放队列(N)"格式 -->
+        <TextView
+            android:id="@+id/queue_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- 关闭按钮：点击收起 BottomSheet 面板 -->
+        <ImageView
+            android:id="@+id/queue_close"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_chevron_down"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <!-- 分隔线：标题栏与列表之间的细分隔 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <!-- 队列歌曲列表：展示当前播放队列，使用 item_queue 布局渲染每项 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/queue_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" />
+</LinearLayout>

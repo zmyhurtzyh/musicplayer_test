@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主界面：应用的入口页面，承载搜索栏、内容导航和底部播放栏 -->
+<!-- 核心布局：CoordinatorLayout，AppBarLayout（搜索栏）+ ViewPager2（首页/我的/搜索三个Tab）+ 底部 MiniPlayer + BottomNavigationView -->
+<!-- 关键交互：搜索栏点击跳转搜索页、底部导航切换Tab、MiniPlayer点击进入全屏播放页 -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部搜索栏：随滚动隐藏/显示（scroll|enterAlways），点击跳转搜索页 -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        app:elevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <!-- 搜索框容器：圆角背景 + 搜索图标 + 提示文字，整体可点击跳转搜索页 -->
+            <LinearLayout
+                android:id="@+id/search_box"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_search_box"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:elevation="2dp">
+
+                <!-- 搜索图标 -->
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_search"
+                    android:contentDescription="@null" />
+
+                <!-- 搜索提示文字：仅展示，实际输入在搜索页 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/search_hint"
+                    android:textColor="@color/text_hint"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- 页面内容区：ViewPager2 承载首页/我的/搜索三个 Fragment 页面 -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <!-- 底部区域：MiniPlayer（有歌曲播放时显示）+ 底部导航栏，整体贴底布局 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <!-- MiniPlayer 迷你播放栏：显示当前播放歌曲信息，点击进入全屏播放页，默认隐藏 -->
+        <com.musicplayer.app.ui.mini.MiniPlayerView
+            android:id="@+id/mini_player"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_mini_player"
+            android:elevation="8dp"
+            android:visibility="gone"
+            tools:visibility="Visible" />
+
+        <!-- 底部导航栏：首页/我的/搜索三个 Tab，配合 ViewPager2 联动切换 -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/bg_white"
+            android:elevation="0dp"
+            app:itemIconTint="@color/bottom_nav_color"
+            app:itemTextColor="@color/bottom_nav_color"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/menu_bottom_nav" />
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

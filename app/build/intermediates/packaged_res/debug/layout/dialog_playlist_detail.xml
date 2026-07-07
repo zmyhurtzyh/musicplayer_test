@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 歌单详情面板（BottomSheet）：展示歌单封面、名称、歌曲数量和歌曲列表 -->
+<!-- 核心布局：垂直 LinearLayout，拖动指示条 + 歌单信息区（封面+名称+数量+关闭）+ 播放全部按钮 + 歌曲列表 -->
+<!-- 关键交互：点击"播放全部"将歌单歌曲加入播放队列、列表项点击播放对应歌曲、关闭按钮收起面板 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <!-- 拖动指示条：视觉提示用户可拖拽调整面板高度 -->
+    <View
+        android:layout_width="36dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:background="#E0E0E0" />
+
+    <!-- 歌单信息区：左侧封面 + 中间名称/歌曲数 + 右侧关闭按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="10dp">
+
+        <!-- 歌单封面缩略图 -->
+        <ImageView
+            android:id="@+id/detail_cover"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@null" />
+
+        <!-- 歌单名称和歌曲数量 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <!-- 歌单名称：最多两行，加粗显示 -->
+            <TextView
+                android:id="@+id/detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- 歌曲数量：如"共10首" -->
+            <TextView
+                android:id="@+id/detail_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- 关闭按钮：点击收起 BottomSheet 面板 -->
+        <ImageView
+            android:id="@+id/detail_close"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_chevron_down"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <!-- 播放全部按钮：点击将歌单中所有歌曲加入播放队列并从第一首开始播放 -->
+    <LinearLayout
+        android:id="@+id/detail_play_all"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="?attr/selectableItemBackground">
+
+        <!-- 播放图标 -->
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_mini_play"
+            android:contentDescription="@null" />
+
+        <!-- "播放全部"文字 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/action_play_all"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 分隔线：播放全部按钮与歌曲列表之间 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <!-- 歌曲列表：展示歌单中的歌曲，使用 item_song 布局渲染每项 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/detail_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" />
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 网易云主色系 -->
+    <color name="netease_red">#C20C0C</color>
+    <color name="netease_red_dark">#A30808</color>
+    <color name="netease_red_light">#E84040</color>
+
+    <!-- 背景与表面 -->
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_gray">#F5F5F5</color>
+    <color name="bg_gray_light">#FAFAFA</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="bg_card_warm">#FFF8F6</color>
+    <color name="bg_playing">#1A1A1A</color>
+    <color name="bg_playing_dark">#000000</color>
+
+    <!-- 文本 -->
+    <color name="text_primary">#333333</color>
+    <color name="text_secondary">#888888</color>
+    <color name="text_hint">#B3B3B3</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_white_secondary">#B3FFFFFF</color>
+
+    <!-- 分隔线 -->
+    <color name="divider">#EEEEEE</color>
+    <color name="divider_dark">#33FFFFFF</color>
+
+    <!-- 功能色 -->
+    <color name="favorite_red">#E84040</color>
+    <color name="transparent">#00000000</color>
+    <color name="black_overlay">#80000000</color>
+    <color name="cover_placeholder">#E0E0E0</color>
+
+    <!-- 渐变色 -->
+    <color name="gradient_red_start">#C20C0C</color>
+    <color name="gradient_red_end">#E84040</color>
+    <color name="gradient_warm_start">#FF6B6B</color>
+    <color name="gradient_warm_end">#EE5A52</color>
+</resources>

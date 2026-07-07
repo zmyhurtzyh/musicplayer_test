@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 歌词页底部渐变遮罩：从透明到深蓝紫的纵向渐变，覆盖在歌词列表底部 -->
+<!-- 视觉效果：让底部歌词行自然淡出消失，与顶部遮罩配合形成歌词的"聚焦中间"视觉效果 -->
+<!-- 使用场景：歌词子页（page_lyric）中 ListView 下方的遮罩层（注意：当前 page_lyric 未使用此 drawable，预留供扩展） -->
+<!-- 颜色含义：透明 → #660F0A2E（40%透明度极深蓝紫）→ #CC0F0A2E（80%透明度极深蓝紫），由浅到深 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="@android:color/transparent"
+        android:centerColor="#660F0A2E"
+        android:endColor="#CC0F0A2E"
+        android:angle="270" />
+</shape>

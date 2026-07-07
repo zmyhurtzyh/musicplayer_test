@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 通用圆形按钮水波纹背景：白色 ripple 效果 + 圆形遮罩，无底色 -->
+<!-- 视觉效果：透明底 + 点击时白色水波纹在圆形范围内扩散，提供触摸反馈而不改变按钮外观 -->
+<!-- 使用场景：全屏播放页中返回/上首/下首/收藏等圆形按钮的 background，统一的触摸反馈风格 -->
+<!-- 颜色含义：ripple #44FFFFFF（27%白色水波纹），遮罩 #FFFFFF（白色圆形限定波纹范围） -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#44FFFFFF">
+    <!-- 遮罩层：白色圆形，限制 ripple 水波纹在圆形范围内扩散 -->
+    <item android:id="@android:id/mask">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+</ripple>

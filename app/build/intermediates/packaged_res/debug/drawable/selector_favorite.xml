@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 收藏按钮：未收藏灰心、已收藏红心 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/ic_heart_red" />
+    <item android:drawable="@drawable/ic_heart_gray" />
+</selector>

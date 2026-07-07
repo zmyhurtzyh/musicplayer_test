@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 默认占位封面：浅灰圆角 + 音符 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M0,0h120v120h-120z" />
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M48,72m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0" />
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M72,68m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0" />
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M54,72 L54,48 L78,44 L78,68 L74,68 L74,48.4 L58,51.5 L58,72 Z" />
+</vector>

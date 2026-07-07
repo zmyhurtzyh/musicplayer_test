@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 首页歌单卡片项：用于首页分区内的横向滚动卡片列表，展示单个歌单的封面、播放数和标题 -->
+<!-- 核心布局：垂直 LinearLayout，MaterialCardView（圆角封面 + 播放数角标）+ 歌单标题文字 -->
+<!-- 关键交互：点击整个卡片打开歌单详情面板 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="112dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp">
+
+    <!-- 封面卡片：圆角 MaterialCardView，内含封面图和播放数角标 -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:strokeWidth="0dp">
+
+        <!-- 歌单封面图：居中裁剪填充整个卡片区域 -->
+        <ImageView
+            android:id="@+id/card_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="@null" />
+
+        <!-- 播放数角标：右上角半透明背景 + 耳机图标 + 数字，展示歌单热度 -->
+        <LinearLayout
+            android:id="@+id/card_count_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_play_count"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+
+            <!-- 耳机小图标 -->
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/ic_headset_small"
+                android:contentDescription="@null" />
+
+            <!-- 播放数文字：如"12万" -->
+            <TextView
+                android:id="@+id/card_play_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:textColor="@color/text_white"
+                android:textSize="9sp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- 歌单标题：封面下方最多两行文字，超长省略 -->
+    <TextView
+        android:id="@+id/card_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/text_primary"
+        android:textSize="12sp"
+        android:lineSpacingExtra="2dp" />
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 操作菜单项：用于歌曲"更多"操作面板中的单行操作选项 -->
+<!-- 核心布局：水平 LinearLayout，左侧图标 + 右侧文字，整行可点击 -->
+<!-- 关键交互：点击执行对应操作（收藏/加入歌单/下载/分享等），由代码动态添加到 more_actions 容器中 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:background="?attr/selectableItemBackground">
+
+    <!-- 菜单图标：左侧展示操作对应的图标（如收藏心形、下载箭头等） -->
+    <ImageView
+        android:id="@+id/menu_icon"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:scaleType="centerInside"
+        android:contentDescription="@null" />
+
+    <!-- 菜单文字：右侧展示操作名称（如"收藏"、"加入歌单"等） -->
+    <TextView
+        android:id="@+id/menu_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/text_primary"
+        android:textSize="15sp" />
+</LinearLayout>

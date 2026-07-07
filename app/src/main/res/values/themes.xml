@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 主应用主题：白底，红色强调，类似网易云首页 -->
+    <style name="Theme.MusicPlayer" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/netease_red</item>
+        <item name="colorPrimaryVariant">@color/netease_red_dark</item>
+        <item name="colorOnPrimary">@color/text_white</item>
+        <item name="colorSecondary">@color/netease_red_light</item>
+        <item name="colorOnSecondary">@color/text_white</item>
+        <item name="android:colorBackground">@color/bg_white</item>
+        <item name="colorSurface">@color/bg_card</item>
+        <item name="colorError">@color/favorite_red</item>
+        <item name="android:statusBarColor">@color/bg_white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <!-- 全屏播放页：深色沉浸 -->
+    <style name="Theme.MusicPlayer.Playing" parent="Theme.MusicPlayer">
+        <item name="android:statusBarColor">@color/bg_playing_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/bg_playing_dark</item>
+        <item name="android:windowBackground">@color/bg_playing</item>
+    </style>
+
+    <!-- 圆角卡片样式 -->
+    <style name="Widget.MusicPlayer.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">1dp</item>
+        <item name="cardBackgroundColor">@color/bg_card</item>
+    </style>
+
+    <!-- 圆形封面 -->
+    <style name="CircleCover">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- 圆角矩形封面（4dp 圆角） -->
+    <style name="RoundedCover">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <!-- BottomSheetDialog 圆角背景主题 -->
+    <style name="ThemeOverlay.MusicPlayer.BottomSheetDialog"
+        parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.MusicPlayer.BottomSheet</item>
+    </style>
+
+    <style name="Widget.MusicPlayer.BottomSheet" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="backgroundTint">@color/bg_white</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.MusicPlayer.TopRounded</item>
+    </style>
+
+    <style name="ShapeAppearance.MusicPlayer.TopRounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeTopRight">16dp</item>
+    </style>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 页面指示器未选中态：6dp 半透明白色实心圆点 -->
+<!-- 视觉效果：低透明度白色圆点，与选中态白色圆点形成明暗对比，表示非活跃页面 -->
+<!-- 使用场景：全屏播放页（activity_playing）中页面指示器的未选中项，对应非当前显示的封面/歌词页 -->
+<!-- 颜色含义：#55FFFFFF（33%白色半透明），在深色背景上可见但不突出 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#55FFFFFF" />
+    <size android:width="6dp" android:height="6dp" />
+</shape>

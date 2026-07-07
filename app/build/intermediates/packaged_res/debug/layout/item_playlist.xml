@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 歌单列表项：用于"我的"页面歌单列表，卡片样式展示歌单信息 -->
+<!-- 核心布局：MaterialCardView（暖色圆角卡片），内含水平 LinearLayout：封面 + 名称/数量 + 更多按钮 -->
+<!-- 关键交互：点击卡片打开歌单详情面板、更多按钮弹出歌单操作菜单（编辑/删除） -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardBackgroundColor="@color/bg_card_warm"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="1dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="8dp">
+
+        <!-- 歌单封面缩略图：默认使用歌单图标占位 -->
+        <ImageView
+            android:id="@+id/playlist_cover"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_playlist"
+            android:contentDescription="@null" />
+
+        <!-- 歌单名/歌曲数量区域：垂直排列，加粗名称 + 歌曲数量 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <!-- 歌单名称：加粗显示，单行省略 -->
+            <TextView
+                android:id="@+id/playlist_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- 歌曲数量：如"10首" -->
+            <TextView
+                android:id="@+id/playlist_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- 更多按钮：点击弹出歌单操作菜单（编辑歌单信息/删除歌单） -->
+        <ImageView
+            android:id="@+id/playlist_more"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_more"
+            android:contentDescription="@null" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

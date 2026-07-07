@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 歌词页顶部渐变遮罩：从深蓝紫到透明的纵向渐变，覆盖在歌词列表顶部 -->
+<!-- 视觉效果：让顶部歌词行自然淡出消失，避免文字被截断的突兀感，营造柔和的边缘效果 -->
+<!-- 使用场景：歌词子页（page_lyric）中 ListView 上方的遮罩层 -->
+<!-- 颜色含义：#312E81（与播放页背景同色，实色）→ #99312E81（60%透明度过渡）→ 透明，确保与背景无缝衔接 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="#312E81"
+        android:centerColor="#99312E81"
+        android:endColor="@android:color/transparent"
+        android:angle="270" />
+</shape>

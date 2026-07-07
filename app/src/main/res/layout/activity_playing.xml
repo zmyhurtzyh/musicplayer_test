@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 全屏播放页面：展示当前播放歌曲的封面/歌词、进度条和播放控制 -->
+<!-- 核心布局：ConstraintLayout，顶部导航栏 + ViewPager2（封面/歌词滑动切换）+ 进度条 + 播放控制栏 + 底部歌曲信息 -->
+<!-- 关键交互：左右滑动切换封面/歌词页、拖动进度条、播放/暂停/上下首/收藏/加入歌单 -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_playing_gradient">
+
+    <!-- 返回按钮：点击退出全屏播放页，返回上一级页面 -->
+    <ImageButton
+        android:id="@+id/playing_back"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_btn_ripple_circle"
+        android:src="@drawable/ic_back_white"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 顶部歌曲标题：居中显示当前播放歌曲名称，带文字阴影增强可读性 -->
+    <TextView
+        android:id="@+id/playing_title_top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:shadowColor="#000000"
+        android:shadowRadius="6"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:textColor="@color/text_white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/playing_back"
+        app:layout_constraintEnd_toStartOf="@id/playing_share"
+        app:layout_constraintStart_toEndOf="@id/playing_back"
+        app:layout_constraintTop_toTopOf="@id/playing_back" />
+
+    <!-- 播放队列按钮：点击弹出播放队列 BottomSheet 面板 -->
+    <ImageButton
+        android:id="@+id/playing_share"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_btn_ripple_circle"
+        android:src="@drawable/ic_queue"
+        android:tint="@color/text_white"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/playing_back" />
+
+    <!-- 封面/歌词 ViewPager2：左右滑动在"黑胶唱片封面"和"歌词页"之间切换 -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/playing_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@id/indicator_container"
+        app:layout_constraintTop_toBottomOf="@id/playing_back" />
+
+    <!-- 页面指示器：两个圆点指示当前是封面页还是歌词页 -->
+    <LinearLayout
+        android:id="@+id/indicator_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/playing_current"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- 指示器第一项（封面页）：默认选中态白色圆点 -->
+        <ImageView
+            android:id="@+id/indicator_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/dot_indicator_selected" />
+
+        <!-- 指示器第二项（歌词页）：默认未选中态半透明圆点 -->
+        <ImageView
+            android:id="@+id/indicator_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dot_indicator_unselected" />
+    </LinearLayout>
+
+    <!-- 当前播放时间：显示已播放时长，等宽字体确保数字不跳动 -->
+    <TextView
+        android:id="@+id/playing_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/text_white_secondary"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@id/playing_progress_seek"
+        app:layout_constraintStart_toStartOf="@id/playing_progress_seek" />
+
+    <!-- 歌曲总时长：显示歌曲完整时长 -->
+    <TextView
+        android:id="@+id/playing_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:textColor="@color/text_white_secondary"
+        android:textSize="11sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/playing_current"
+        app:layout_constraintEnd_toEndOf="@id/playing_progress_seek" />
+
+    <!-- 播放进度条：可拖动调整播放进度，max=1000 实现精细控制，自定义滑块和进度样式 -->
+    <SeekBar
+        android:id="@+id/playing_progress_seek"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="16dp"
+        android:max="1000"
+        android:splitTrack="false"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:thumb="@drawable/thumb_seekbar"
+        android:thumbOffset="0dp"
+        android:paddingStart="9dp"
+        android:paddingEnd="9dp"
+        app:layout_constraintBottom_toTopOf="@id/playing_controls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- 播放控制栏：包含播放模式、上一首、播放/暂停、下一首、收藏、加入歌单六个按钮 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/playing_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_controls_bar"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/playing_bottom_bar">
+
+        <!-- 播放模式按钮：循环切换 顺序播放/单曲循环/随机播放 三种模式 -->
+        <ImageButton
+            android:id="@+id/playing_mode"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_btn_ripple_circle"
+            android:src="@drawable/ic_mode_list"
+            android:tint="@color/text_white_secondary"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- 上一首按钮：点击切换到播放队列中的上一首歌曲 -->
+        <ImageButton
+            android:id="@+id/playing_prev"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_btn_ripple_circle"
+            android:src="@drawable/ic_prev_white"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/playing_toggle"
+            app:layout_constraintStart_toEndOf="@id/playing_mode"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- 播放/暂停按钮：核心交互按钮，红色渐变圆形背景，点击切换播放和暂停状态 -->
+        <ImageButton
+            android:id="@+id/playing_toggle"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="@drawable/ic_play_selector"
+            android:src="@drawable/ic_toggle_pause"
+            android:elevation="8dp"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- 下一首按钮：点击切换到播放队列中的下一首歌曲 -->
+        <ImageButton
+            android:id="@+id/playing_next"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_btn_ripple_circle"
+            android:src="@drawable/ic_next_white"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/playing_favorite"
+            app:layout_constraintStart_toEndOf="@id/playing_toggle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- 收藏按钮：点击收藏/取消收藏当前歌曲，图标随收藏状态切换 -->
+        <ImageButton
+            android:id="@+id/playing_favorite"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_btn_ripple_circle"
+            android:src="@drawable/selector_favorite_white"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/playing_add_to_playlist"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- 加入歌单按钮：点击弹出歌单选择器，将当前歌曲添加到指定歌单 -->
+        <ImageButton
+            android:id="@+id/playing_add_to_playlist"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_btn_ripple_circle"
+            android:src="@drawable/ic_add"
+            android:tint="@color/text_white_secondary"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- 底部歌曲信息栏：显示歌曲名称和歌手名，带文字阴影 -->
+    <LinearLayout
+        android:id="@+id/playing_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- 歌曲名称 -->
+        <TextView
+            android:id="@+id/playing_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000000"
+            android:shadowRadius="6"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:textColor="@color/text_white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- 歌手名称 -->
+        <TextView
+            android:id="@+id/playing_artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/text_white_secondary"
+            android:textSize="13sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

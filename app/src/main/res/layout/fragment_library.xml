@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 我的页面 Fragment：展示用户个人歌单列表，支持新建歌单和刷新 -->
+<!-- 核心布局：FrameLayout 包裹垂直 LinearLayout，顶部标题栏（渐变背景）+ RecyclerView 歌单列表 + 空状态提示 -->
+<!-- 关键交互：点击歌单打开详情、新建歌单按钮创建空歌单、刷新按钮重新加载歌单数据 -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 顶部标题栏：渐变背景 + 标题文字 + 新建/刷新操作按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/bg_header_gradient"
+            android:elevation="4dp">
+
+            <!-- 页面标题文字 -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tab_library"
+                android:textColor="@color/text_white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- 当前用户昵称 -->
+            <TextView
+                android:id="@+id/tv_user_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_white"
+                android:textSize="14sp" />
+
+            <!-- 新建歌单按钮：点击弹出新建歌单对话框 -->
+            <ImageView
+                android:id="@+id/btn_create_playlist"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_add"
+                android:scaleType="center"
+                android:contentDescription="@string/library_create_playlist"
+                app:tint="@color/text_white" />
+
+            <!-- 刷新按钮：点击重新从服务器加载歌单列表 -->
+            <ImageView
+                android:id="@+id/btn_refresh"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_refresh"
+                android:scaleType="center"
+                android:contentDescription="@null"
+                app:tint="@color/text_white" />
+
+            <!-- 退出登录按钮 -->
+            <TextView
+                android:id="@+id/btn_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+                android:textColor="@color/text_white"
+                android:textSize="13sp"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- 歌单列表区域：FrameLayout 包裹 RecyclerView 和空状态提示 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!-- 歌单列表：底部大留白避免被 MiniPlayer 遮挡 -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingTop="8dp"
+                android:paddingBottom="160dp"
+                android:scrollbars="none" />
+
+            <!-- 空状态提示：无歌单时居中显示引导文字，默认隐藏 -->
+            <TextView
+                android:id="@+id/empty_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/library_empty_hint"
+                android:textColor="@color/text_hint"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

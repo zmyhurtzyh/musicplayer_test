@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 进度条滑块：白色圆点 + 外圈半透明白色光晕，双层 layer-list 叠放 -->
+<!-- 视觉效果：18dp 外圈光晕 + 10dp 内圈白色实心圆，形成发光按钮效果，便于手指触摸拖动 -->
+<!-- 使用场景：全屏播放页（activity_playing）中 SeekBar 的 thumb 属性 -->
+<!-- 颜色含义：外圈 #33FFFFFF（20%白色光晕）、内圈 #FFFFFF（纯白主体），在深色背景上醒目突出 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 光晕层：18dp 半透明白色圆形，营造发光效果 -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#33FFFFFF" />
+            <size android:width="18dp" android:height="18dp" />
+        </shape>
+    </item>
+    <!-- 主体层：10dp 纯白圆形，偏移 4dp 居中在光晕内 -->
+    <item android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="4dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" />
+            <size android:width="10dp" android:height="10dp" />
+        </shape>
+    </item>
+</layer-list>

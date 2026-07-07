@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 播放按钮背景：红色渐变圆形 + 白色 ripple 水波纹效果 -->
+<!-- 视觉效果：圆形按钮背景，45度对角线渐变（亮红→网易红），点击时产生白色水波纹反馈 -->
+<!-- 使用场景：全屏播放页（activity_playing）中播放/暂停按钮（playing_toggle）的 background -->
+<!-- 颜色含义：渐变 #E84040→#C20C0C（亮红→网易红，品牌色系）、ripple #33FFFFFF（20%白色水波纹） -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#33FFFFFF">
+    <!-- 遮罩层：白色圆形，限制 ripple 水波纹在圆形范围内 -->
+    <item android:id="@android:id/mask">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+    <!-- 实际背景：45度对角线红色渐变圆形 -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="#E84040"
+                android:endColor="#C20C0C"
+                android:angle="45" />
+        </shape>
+    </item>
+</ripple>

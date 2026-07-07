@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 进度条背景轨道：2dp 白色半透明水平线 -->
+<!-- 视觉效果：极细的半透明白色线条，作为 SeekBar 的底层轨道背景 -->
+<!-- 使用场景：配合 seekbar_progress 使用，作为进度条的非活跃区域背景轨道 -->
+<!-- 颜色含义：#33FFFFFF（20%白色半透明），在深色背景上提供微弱的轨道可见性 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line">
+    <corners android:radius="2dp" />
+    <stroke android:width="2dp" android:color="#33FFFFFF" />
+</shape>

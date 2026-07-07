@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 歌曲"更多"操作面板（BottomSheet）：展示针对单首歌曲的快捷操作菜单 -->
+<!-- 核心布局：垂直 LinearLayout，拖动指示条 + 歌曲信息预览（标题+副标题）+ 分隔线 + 动态操作列表容器 -->
+<!-- 关键交互：操作列表由代码动态填充（如：收藏、加入歌单、下载、分享等），点击某项执行对应操作 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:orientation="vertical"
+    android:paddingBottom="12dp">
+
+    <!-- 拖动指示条：视觉提示用户可拖拽调整面板高度 -->
+    <View
+        android:layout_width="36dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:background="#E0E0E0" />
+
+    <!-- 歌曲信息预览：展示当前操作的歌曲名称和歌手信息，确认操作对象 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="10dp">
+
+        <!-- 歌曲标题 -->
+        <TextView
+            android:id="@+id/more_song_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- 歌曲副标题（歌手 - 专辑） -->
+        <TextView
+            android:id="@+id/more_song_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- 分隔线：歌曲信息与操作列表之间 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <!-- 操作列表容器：由代码动态添加 item_menu_action 子项（收藏、加入歌单、下载、分享等操作） -->
+    <LinearLayout
+        android:id="@+id/more_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+</LinearLayout>

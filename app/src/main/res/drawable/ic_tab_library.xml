@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 底部 Tab：我的 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FF888888"
+        android:pathData="M4,6h2v12H4zM8,6h2v12H8zM12,6h2v12h-2zM16,6h2v12h-2z" />
+</vector>

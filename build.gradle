@@ -1,0 +1,4 @@
+// 顶层构建文件，定义全局构建选项
+plugins {
+    id 'com.android.application' version '8.1.4' apply false
+}

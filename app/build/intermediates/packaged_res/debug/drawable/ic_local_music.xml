@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 本地音乐图标 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="#FFE0E0E0"
+        android:pathData="M0,0h48v48h-48z" />
+    <path
+        android:fillColor="#FFBDBDBD"
+        android:pathData="M24,10l-2,0 0,16.55c-0.59,-0.34 -1.27,-0.55 -2,-0.55 -2.21,0 -4,1.79 -4,4s1.79,4 4,4 4,-1.79 4,-4L24,16l6,0 0,-2 -6,0z" />
+</vector>

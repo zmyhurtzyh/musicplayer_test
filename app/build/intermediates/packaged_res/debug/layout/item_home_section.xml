@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 首页分区项：用于首页 RecyclerView 中的分区标题行，包含红色指示条、标题和"更多"入口 -->
+<!-- 核心布局：垂直 LinearLayout，分区标题栏（指示条+标题+更多）+ 横向滚动卡片 RecyclerView -->
+<!-- 关键交互：点击"更多"可展开该分区的完整歌单列表 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:background="@color/bg_white">
+
+    <!-- 分区标题栏：左侧红色竖条指示器 + 分区名称 + 右侧"更多"入口 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <!-- 红色竖条指示器：视觉区分不同分区，增强品牌识别 -->
+        <View
+            android:layout_width="4dp"
+            android:layout_height="18dp"
+            android:background="@drawable/bg_section_indicator" />
+
+        <!-- 分区标题文字：如"推荐歌单"、"最近播放"等 -->
+        <TextView
+            android:id="@+id/section_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/text_primary"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- "更多"入口：点击展示该分区下的完整歌单列表，默认隐藏 -->
+        <TextView
+            android:id="@+id/section_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- 卡片横向滚动列表：展示该分区下的歌单卡片（item_home_card），水平滚动 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/section_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:scrollbars="none" />
+</LinearLayout>
